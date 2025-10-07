@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #1a2a6c, #b21f1f, #fdbb2d);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#app {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+#controls h2 {
+  font-size: 1rem;
+}
+
+button {
+  background: #fdbb2d;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 0.3rem;
+  cursor: pointer;
+  color: #222;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffda79;
+}
+
+#timer {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#time-left {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#actions button {
+  margin: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  #controls {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #app {
+    width: 95%;
+  }
+
+  #time-left {
+    font-size: 2rem;
+  }
+}
