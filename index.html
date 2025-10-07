@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>25 + 5 Clock</title>
+  <!-- Link your existing CSS if you have it -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="clock-app">
+    <h1>25 + 5 Clock</h1>
+
+    <div class="length-controls">
+      <div class="control break">
+        <h2 id="break-label">Break Length</h2>
+        <div class="control-row">
+          <button id="break-decrement" aria-label="Break Decrement">-</button>
+          <span id="break-length">5</span>
+          <button id="break-increment" aria-label="Break Increment">+</button>
+        </div>
+      </div>
+
+      <div class="control session">
+        <h2 id="session-label">Session Length</h2>
+        <div class="control-row">
+          <button id="session-decrement" aria-label="Session Decrement">-</button>
+          <span id="session-length">25</span>
+          <button id="session-increment" aria-label="Session Increment">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="timer">
+      <h2 id="timer-label">Session</h2>
+      <div id="time-left">25:00</div>
+    </div>
+
+    <div class="controls">
+      <button id="start_stop" aria-label="Start Stop">Start / Stop</button>
+      <button id="reset" aria-label="Reset">Reset</button>
+    </div>
+
+    <!-- required audio element for tests (>= 1s) -->
+    <audio id="beep" preload="auto" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/BeepSound.wav"></audio>
+  </div>
+
+  <!-- Main script: place at end of body so DOM elements exist -->
+  <script src="script.js"></script>
+
+  <!-- FreeCodeCamp test bundle (when running tests in CodePen include this) -->
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>
